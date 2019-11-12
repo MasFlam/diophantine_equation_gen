@@ -28,10 +28,10 @@ int main(int argc, char* args[])
     vector<Diophantine_equation> unsolvable = gen_unsolvable(unsolvable_count);
     
     cout << "SOLVABLE:" << endl;
-    for(Diophantine_equation eq : solvable) cout << eq.factor1 << "x " << eq.factor2 << "y = " << eq.right_side << endl;
+    for(Diophantine_equation eq : solvable) cout << eq.factor1 << "x + " << eq.factor2 << "y = " << eq.right_side << endl;
     
     cout << "UNSOLVABLE:" << endl;
-    for(Diophantine_equation eq : unsolvable) cout << eq.factor1 << "x " << eq.factor2 << "y = " << eq.right_side << endl;
+    for(Diophantine_equation eq : unsolvable) cout << eq.factor1 << "x + " << eq.factor2 << "y = " << eq.right_side << endl;
     
     return 0;
 }
